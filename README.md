@@ -15,3 +15,4 @@ Jika ingin berkontribusi, silahkan tambah fitur kamu ke dalah kode, dan buat "Pu
 3. Tambah fitur kamu seperti: halaman baru, koneksi API, styling, dsb.
 4. Buat branch baru dan push hasil kerjamu kesana
 5. Buat "Pull Request" baru dan tunggu approval dari admin
+6. Test
