@@ -8,6 +8,9 @@ export default function Index() {
         <Link href="/home">
           <button>MULAI</button>
         </Link>
+        <Link href="/nbrthx">
+          <button>SVGSTEGO</button>
+        </Link>
       </p>
     </div>
   );
