@@ -111,7 +111,7 @@ export default function CommunityPage() {
 
                     <div
                         className="communityFilters"
-                        role="tablist"
+                        role="group"
                         aria-label="Filter contributors"
                     >
                         <button
