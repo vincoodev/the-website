@@ -15,7 +15,21 @@ export default function Tap() {
     "Lambat Banget!", "Hampir...", "Coba Lagi!", "Tangan Berat?", "Nyerah Aja!"
   ];
 
-  const handleButtonClick = (e) => {
+
+
+const moveButton = () => {
+    const x = Math.random() * (window.innerWidth - 150);
+    const y = Math.random() * (window.innerHeight - 100);
+
+    setPosition({ top: `${y}px`, left: `${x}px` });
+    setAttempts((prev) => prev + 1);
+    const randomText = taunts[Math.floor(Math.random() * taunts.length)];
+    setBtnText(randomText);
+    if (!isHovered) setIsHovered(true);
+  };
+  
+  
+      const handleButtonClick = (e) => {
   // Jika tombol baru saja bergerak (dalam waktu kurang dari 50ms), abaikan klik
   // Ini mencegah 'menang instan' karena jari nempel terus
   if (isWinner) return;
@@ -28,7 +42,7 @@ export default function Tap() {
   setIsWinner(true);
 };
 
-
+  
   const resetGame = () => {
     setIsWinner(false);
     setAttempts(0);
