@@ -7,7 +7,12 @@ export default function Layout({ children }) {
         <h1>
           <Link href="/">The Website</Link>
         </h1>
+
+        <nav>
+          <Link href="/community">Community</Link>
+        </nav>
       </header>
+
       <main className="main">{children}</main>
     </div>
   );
