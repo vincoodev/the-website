@@ -8,8 +8,12 @@ export default function Layout({ children }) {
           <Link href="/">The Website</Link>
         </h1>
 
-        <nav>
-          <Link href="/community">Community</Link>
+        <nav aria-label="Main navigation">
+          <ul>
+            <li>
+              <Link href="/community">Community</Link>
+            </li>
+          </ul>
         </nav>
       </header>
 
