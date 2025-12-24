@@ -38,6 +38,11 @@
 .communitySearch:focus {
     border-color: rgba(255, 255, 255, 0.28);
 }
+.communitySearch:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.8);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
 .communityFilters {
     display: flex;
     gap: 8px;
