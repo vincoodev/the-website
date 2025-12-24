@@ -59,6 +59,11 @@
     transform: translateY(-1px);
     border-color: rgba(255, 255, 255, 0.22);
 }
+.communityChip:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.9);
+    outline-offset: 2px;
+    border-color: rgba(255, 255, 255, 0.45);
+}
 .communityChip.isActive {
     border-color: rgba(255, 255, 255, 0.35);
     background: rgba(255, 255, 255, 0.06);
