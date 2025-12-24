@@ -1,22 +1,15 @@
-# The Website — Next.js (SSG) scaffold
+# Introduksi
 
-This project is now a minimal Next.js app with an SSG example and a simple client-only login flow.
+Project ini adalah hasil kontribusi dari para engineer bertalenta di server Vincoo.
+👉 https://discord.com/invite/5brkcMzhRX
 
-## Pages
+Jika ingin berkontribusi, silahkan tambah fitur kamu ke dalah kode, dan buat "Pull Request".
+👉 https://github.com/vincoodev/the-website/pulls
 
-- `/` — Landing page with a **Start** button that navigates to `/home`
-- `/home` — Simple home page to expand with content
-- `/login` — Simple login form (client-side, placeholder auth)
+## Cara berkontribusi
 
-## Scripts
-
-- `npm run dev` — start Next.js dev server
-- `npm run build` — build production app
-- `npm run start` — run production server
-- `npm run export` — export static HTML (works because pages use SSG)
-
-## Next steps
-
-- Replace placeholder auth with a real auth provider
-- Add more SSG pages or dynamic routes
-- Add tests and CI
+1. Clone repository ini
+2. Gunakan `npm run dev` untuk memulai website ini!
+3. Tambah fitur kamu seperti: halaman baru, koneksi API, styling, dsb.
+4. Buat branch baru dan push hasil kerjamu kesana
+5. Buat "Pull Request" baru dan tunggu approval dari admin
