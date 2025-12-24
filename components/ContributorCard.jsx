@@ -67,7 +67,13 @@ export default function ContributorCard({ contributor }) {
             aria-label={`Open GitHub profile of ${login}`}
         >
             <div className="contribTop">
-                <img className="contribAvatar" src={avatar} alt={`${login} avatar`} />
+                {avatar ? (
+                    <img className="contribAvatar" src={avatar} alt={`${login} avatar`} />
+                ) : (
+                    <div className="contribAvatar contribAvatar--fallback" aria-hidden="true">
+                        {login.charAt(0).toUpperCase()}
+                    </div>
+                )}
 
                 <div className="contribMeta">
                     <div className="contribName">@{login}</div>
