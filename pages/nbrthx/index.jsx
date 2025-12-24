@@ -31,11 +31,7 @@ export default function StegoApp() {
     reader.readAsText(file);
   };
 
-<<<<<<< HEAD
-  const parser = new DOMParser()
-=======
   const parser = typeof window != 'undefined' ? new DOMParser() : {}
->>>>>>> ecada1e (code sementara)
 
   // Encode message into SVG
   const handleEncode = () => {
@@ -125,10 +121,7 @@ export default function StegoApp() {
   };
 
   const showCapacity = () => {
-<<<<<<< HEAD
-=======
     if(typeof window == 'undefined') return ''
->>>>>>> ecada1e (code sementara)
     return capacityCheck(parser.parseFromString(inputSvg, 'image/svg+xml'))
   }
 
