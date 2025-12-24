@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from "react";
-import Layout from "../components/Layout";
 import ContributorCard from "../components/ContributorCard";
 
 const OWNER = "vincoodev";
