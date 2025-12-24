@@ -206,12 +206,10 @@
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
         padding-bottom: 6px;
+        scrollbar-width: none;
     }
     .communityFilters::-webkit-scrollbar {
         display: none;
-    }
-    .communityFilters {
-        scrollbar-width: none;
     }
     .communityChip {
         flex: 0 0 auto;
