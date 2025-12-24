@@ -25,7 +25,7 @@ jobs:
                 pull_number,
                 reviewers: ['vincoodev']
               })
-              core.info('Requested reviewer @vincoodev')
+              core.info('Request a reviewer: @vincoodev')
             } catch (err) {
               core.info(`Failed to request reviewer: ${err.message}`)
             }
