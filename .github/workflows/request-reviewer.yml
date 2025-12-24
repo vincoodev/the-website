@@ -1,0 +1,31 @@
+name: Request @vincoodev as reviewer
+
+on:
+  pull_request:
+    types: [opened, reopened, ready_for_review, synchronize]
+
+jobs:
+  request-reviewer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request reviewer via GitHub Script
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const pr = context.payload.pull_request
+            if (!pr) return
+            const owner = context.repo.owner
+            const repo = context.repo.repo
+            const pull_number = pr.number
+            try {
+              await github.rest.pulls.requestReviewers({
+                owner,
+                repo,
+                pull_number,
+                reviewers: ['vincoodev']
+              })
+              core.info('Requested reviewer @vincoodev')
+            } catch (err) {
+              core.info(`Failed to request reviewer: ${err.message}`)
+            }
