@@ -60,7 +60,7 @@ export default function CommunityPage() {
 
             switch (filter) {
                 case "nyemplung":
-                    return n < 3;
+                    return n <= 2;
                 case "newbie":
                     return n >= 3 && n < 10;
                 case "resident":
