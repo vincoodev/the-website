@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AnimatedMessage from "../components/AnimatedMessage";
 
 export default function Index() {
   return (
@@ -9,6 +10,7 @@ export default function Index() {
           <button>MULAI</button>
         </Link>
       </p>
+      <AnimatedMessage />
     </div>
   );
 }
