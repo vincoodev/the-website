@@ -56,3 +56,71 @@ body {
 .login-form button:hover {
   background: #024e9a;
 }
+.message-container {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.message-container:hover {
+  transform: scale(1.05);
+}
+.hearts {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 300px;
+}
+.heart {
+  font-size: 1.5rem;
+  color: #ff6b9d;
+  animation: float 3s ease-in-out infinite, pulse 1.5s ease-in-out infinite;
+  animation-delay: var(--delay);
+  opacity: 0.8;
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+.typed-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ff6b9d;
+  letter-spacing: 2px;
+}
+.typing {
+  display: inline-block;
+  animation: typewriter 2.5s steps(14, end) forwards, blink 0.7s infinite;
+  border-right: 3px solid #ff6b9d;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12.5em;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
