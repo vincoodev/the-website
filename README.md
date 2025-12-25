@@ -14,4 +14,4 @@ Jika ingin berkontribusi, silahkan tambah fitur kamu ke dalah kode, dan buat "Pu
 2. Gunakan `npm run dev` untuk memulai website ini!
 3. Tambah fitur kamu seperti: halaman baru, koneksi API, styling, dsb.
 4. Buat branch baru dan push hasil kerjamu kesana
-5. Buat "Pull Request" baru dan tunggu approval dari admin
+5. Buat "Pull Request" baru dan tunggu approval dari admin.
