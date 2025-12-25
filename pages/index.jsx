@@ -10,7 +10,12 @@ export default function Index() {
           <button>MULAI</button>
         </Link>
         <Link href="/nbrthx">
-          <button>SVGSTEGO</button>
+          <button style={{ marginLeft: '5px' }}>SVGSTEGO</button>
+        </Link>
+        <Link href="/doom">
+          <button style={{ marginLeft: '5px', backgroundColor: 'red', color: 'white' }}>
+            DOOM
+          </button>
         </Link>
       </p>
       <AnimatedMessage />
