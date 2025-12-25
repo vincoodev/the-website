@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  cursor: none !important;
 }
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
