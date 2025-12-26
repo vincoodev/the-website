@@ -4,8 +4,9 @@
  * ═══════════════════════════════════════════════════════════════════════════
  * 
  * Theme: Terminal aesthetic, dark purple + green
- * Challenge: Decode "ROOBPSV WR WKH KRPH RI WKH JRGV" (shift 3)
- * Answer: "OLYMPUS"
+* Challenge: Decode "ROOBPSV WR WKH KRPH RI WKH JRGV" (shift 3)
+* Answer: "OLYMPUS"
+
  * 
  * Design (Gemini 3 Pro):
  * - Matrix Rain Background
