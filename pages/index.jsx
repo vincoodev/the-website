@@ -12,6 +12,9 @@ export default function Index() {
         <Link href="/nbrthx">
           <button>SVGSTEGO</button>
         </Link>
+        <Link href="/gabut">
+          <button>gabut</button>
+        </Link>
       </p>
       <AnimatedMessage />
     </div>
