@@ -22,7 +22,6 @@ export default function DelayCursor({ delay = 0.12 }) {
       target.current.x = e.clientX;
       target.current.y = e.clientY;
 
-      // set awal supaya tidak mulai dari (0,0)
       if (!started.current) {
         started.current = true;
         ghost.current.x = e.clientX;
