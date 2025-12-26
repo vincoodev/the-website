@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import "../styles/community.css";
+import "../styles/TimeWaster.css";
 import Layout from "../components/Layout";
 import DelayCursor from "../components/DelayCursor";
 
