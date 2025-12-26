@@ -31,6 +31,9 @@ export default function Index() {
         <Link href="/gabut">
           <button>gabut</button>
         </Link>
+         <Link href="/snekabsurd">
+          <button style={{ marginLeft: '5px' }}>Absurd Snek Gem</button>
+        </Link>
       </p>
       <AnimatedMessage />
       <DelayCursor delay={0.05} />
