@@ -56,6 +56,9 @@ export default function Index() {
         <Link href="/gabut">
           <button>gabut</button>
         </Link>
+        <Link href="/guestbook">
+          <button>guestbook</button>
+        </Link>
       </p>
       <AnimatedMessage />
       <DelayCursor delay={0.05} />
