@@ -108,12 +108,12 @@ const Navbar = () => {
                       "User"}
                   </div>
 
-                  <Link
+                  {/* <Link
                     href={`${baseurl}/dashboard`}
                     className="block px-4 py-2 text-sm hover:bg-gray-100"
                   >
                     Dashboard
-                  </Link>
+                  </Link> */}
 
                   <Link
                     href={`${baseurl}/settings`}
@@ -188,13 +188,13 @@ const Navbar = () => {
             {user?.profile?.displayName || user?.profile?.nickname || "User"}
           </div>
 
-          <Link
+          {/* <Link
             href={`${baseurl}/dashboard`}
             onClick={() => setUserOpen(false)}
             className="block px-4 py-2 text-sm hover:bg-gray-100"
           >
             Dashboard
-          </Link>
+          </Link> */}
 
           <Link
             href={`${baseurl}/settings`}

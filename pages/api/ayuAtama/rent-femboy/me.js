@@ -18,6 +18,11 @@ async function handler(req, res) {
         },
       });
 
+      const email = await prisma.user.findUnique({
+        where: { id: userId },
+        select: { email: true },
+      });
+
       return res.status(200).json({
         userId,
         role,
@@ -27,6 +32,7 @@ async function handler(req, res) {
               image: renter.images[0]?.url || null,
             }
           : null,
+        email: email?.email || null,
       });
     }
 
@@ -45,6 +51,11 @@ async function handler(req, res) {
         },
       });
 
+      const email = await prisma.user.findUnique({
+        where: { id: userId },
+        select: { email: true },
+      });
+
       return res.status(200).json({
         userId,
         role,
@@ -54,8 +65,10 @@ async function handler(req, res) {
               baseRate: femboy.baseRate,
               isActive: femboy.listing?.isActive ?? false,
               image: femboy.images[0]?.url || null,
+              bio: femboy.bio || null,
             }
           : null,
+        email: email?.email || null,
       });
     }
 

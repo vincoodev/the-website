@@ -3,7 +3,6 @@ import "../styles/community.css";
 import "../styles/TimeWaster.css";
 import Layout from "../components/Layout";
 import { useRouter } from "next/router";
-import LayoutRentFemboy from "@components/ayuAtama/layout";
 import Navbar from "@components/ayuAtama/navbar";
 import Footer from "@components/ayuAtama/footer";
 

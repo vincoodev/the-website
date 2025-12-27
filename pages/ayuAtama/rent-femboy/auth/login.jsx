@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 const SignInSection = () => {
   const router = useRouter();
   const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL;
+  const baseUrl = process.env.NEXT_PUBLIC_FEM_RENT_URL;
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -38,7 +39,7 @@ const SignInSection = () => {
       window.dispatchEvent(new Event("auth-changed"));
 
       // redirect
-      router.push("/ayuAtama/rent-femboy");
+      router.push(`${baseUrl}`);
     } catch (err) {
       setError(err.message);
     } finally {

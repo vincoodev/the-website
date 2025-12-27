@@ -8,7 +8,7 @@
     "start": "next start",
     "export": "next export",
     "lint": "next lint",
-    "prisma:dev": "npx prisma migrate dev && npx prisma generate"
+    "ayuAtama": "npx prisma migrate dev && npx prisma generate"
   },
   "dependencies": {
     "@prisma/adapter-better-sqlite3": "^7.2.0",
