@@ -3,6 +3,7 @@ import AnimatedMessage from "../components/AnimatedMessage";
 import DelayCursor from "../components/DelayCursor";
 import AnimeCTAButton from "@components/ayuAtama/button";
 import FakeFemboyPopup from "@components/ayuAtama/fakePopup";
+import MovingPuzzleButton from "../components/MovingPuzzleButton";
 
 export default function Index() {
   function Visitor() {
@@ -18,6 +19,7 @@ export default function Index() {
     <div>
       <FakeFemboyPopup />
       <AnimeCTAButton />
+      <MovingPuzzleButton />
       <h2>Selamat datang!</h2>
       <p>
         <Link href="/home">
@@ -61,7 +63,7 @@ export default function Index() {
         </Link>
       </p>
       <AnimatedMessage />
-      <DelayCursor delay={0.05} />
+      <DelayCursor delay={1} />
       <Visitor />
       <style jsx global>{`
         * {
