@@ -1,11 +1,15 @@
 import Link from "next/link";
+import { useState } from "react";
 import AnimatedMessage from "../components/AnimatedMessage";
 import DelayCursor from "../components/DelayCursor";
 import AnimeCTAButton from "@components/ayuAtama/button";
 import FakeFemboyPopup from "@components/ayuAtama/fakePopup";
 import MovingPuzzleButton from "../components/MovingPuzzleButton";
+import Fireworks from "../components/Fireworks";
 
 export default function Index() {
+  const [fireworksOn, setFireworksOn] = useState(false);
+
   function Visitor() {
     return (
       <div>
@@ -15,11 +19,13 @@ export default function Index() {
       </div>
     );
   }
+
   return (
     <div>
       <FakeFemboyPopup />
       <AnimeCTAButton />
       <MovingPuzzleButton />
+
       <h2>Selamat datang!</h2>
       <p>
         <Link href="/home">
@@ -61,15 +67,30 @@ export default function Index() {
         <Link href="/guestbook">
           <button>guestbook</button>
         </Link>
+         <button
+        onClick={() => setFireworksOn((v) => !v)}
+        style={{
+          backgroundColor: fireworksOn ? "green" : "red",
+          color: "white",
+          padding: "10px 16px",
+          marginBottom: "10px",
+          cursor: "pointer",
+        }}
+      >
+        KEMBANG API?!
+      </button>
+
+      {/* aktifkan efek */}
+      <Fireworks enabled={fireworksOn} />
       </p>
       <AnimatedMessage />
       <DelayCursor delay={1} />
       <Visitor />
-      <style jsx global>{`
+       {/* <style jsx global>{`
         * {
           cursor: none !important;
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }

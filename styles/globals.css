@@ -137,3 +137,42 @@ body {
     border-color: transparent;
   }
 }
+.firework {
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+/* PARTIKEL BESAR */
+.particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff, currentColor 60%);
+  animation: explode 1.2s cubic-bezier(.22,.61,.36,1) forwards;
+  filter: drop-shadow(0 0 12px currentColor);
+}
+
+/* PARTIKEL KECIL (layer kedua) */
+.particle.small {
+  width: 5px;
+  height: 5px;
+  opacity: 1;
+  animation-duration: 1.6s;
+}
+
+@keyframes explode {
+  from {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translate(
+      calc(cos(var(--angle)) * var(--distance)),
+      calc(sin(var(--angle)) * var(--distance))
+    ) scale(0.1);
+    opacity: 0;
+  }
+}
